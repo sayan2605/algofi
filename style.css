@@ -17,6 +17,21 @@ body{
     /* font-family: 'Poppins', sans-serif; */
 }
 
+a{
+    text-decoration: none;
+    color: var(--vrindian-green);
+}
+
+a:hover, .navbtn:hover{
+    text-decoration: none;
+    color: #66c9ce;
+}
+
+button{
+    cursor: pointer;
+    
+}
+
 .caption{
     font-size: 4rem;
     font-weight: 600;
@@ -36,5 +51,32 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--vrindian-green);
+}
+.sortbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.navbar{
+    margin: 14px 24px;
+    padding: 16px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--space-cadet);
+    font-size: 1rem;
+    font-weight: 600;
+
+    outline: none;
+    border: 1px solid var(--vrindian-green);
+    border-radius: 4px;
+}
+.navbtn{
+    background-color: var(--space-cadet);
     color: var(--vrindian-green);
 }
