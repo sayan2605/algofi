@@ -24,26 +24,26 @@
     
     <div class="navbar">
         <div class="newarray">
-            <button type="button" class="navbar navbtn" onClick="newArray()">New Array</button>
+            <button type="button" class="navbar navbtn newarr" onClick="newArray()">New Array</button>
         </div>
         
         <div class="bar_prop">
             <div class="bar_count">
                 <p>Change Bar Count</p>
-                <input type="range" min="1" max="100" value="50" class="slider" id="bar_count">
+                <input type="range" min="1" max="100" value="50" id="barc">
             </div>
             <div class="sort_speed">
                 <p>Change Sort Speed</p>
-                <input type="range" min="1" max="100" value="50" class="slider" id="sort_speed">
+                <input type="range" min="1" max="100" value="50" id="sortsp">
             </div>
         </div>
         
         <div class="sortbtn">
-            <button type="button" class="navbar navbtn">Bubble Sort</button>
-            <button type="button" class="navbar navbtn">Insertion Sort</button>
-            <button type="button" class="navbar navbtn">Selection Sort</button>
-            <button type="button" class="navbar navbtn">Quick Sort</button>
-            <button type="button" class="navbar navbtn">Merge Sort</button>
+            <button type="button" class="navbar navbtn sbubble">Bubble Sort</button>
+            <button type="button" class="navbar navbtn sinsertion">Insertion Sort</button>
+            <button type="button" class="navbar navbtn sselection" onClick="selectionSort()">Selection Sort</button>
+            <button type="button" class="navbar navbtn squick">Quick Sort</button>
+            <button type="button" class="navbar navbtn smerge">Merge Sort</button>
         </div>
     </div>
 
@@ -51,6 +51,8 @@
     </div>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/insertion.js"></script>
+    <script type="text/javascript" src="js/selection.js"></script>
     
 </body>
 </html>
